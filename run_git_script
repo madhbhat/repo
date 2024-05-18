@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage(build ){
       steps {
-            checkout scm
+            git changelog: false, credentialsId: '14b0131f-e5a8-4ec9-8786-3cdd3c544df8', poll: false, url: 'https://github.com/madhbhat/repo'checkout scm
             sh hello.sh
       }
     }

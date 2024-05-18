@@ -2,11 +2,18 @@ pipeline{
   agent any
 
   stages{
-    stage(build){
+    stage(build ){
       steps {
         git https://github.com/madhbhat/repo.git
         sh hello.sh
       }
     }
+
+    stage(deploy){
+      steps {
+        echo " deploy"
+      }
+    }
   }
+  
 }

@@ -4,8 +4,7 @@ pipeline{
   stages{
     stage(build ){
       steps {
-      checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '14b0131f-e5a8-4ec9-8786-3cdd3c544df8', url: 'https://github.com/madhbhat/repo']])
-        sh hello.sh
+            sh hello.sh
       }
     }
 

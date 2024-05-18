@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage(build ){
       steps {
-        git https://github.com/madhbhat/repo.git
+        git 'https://github.com/madhbhat/repo.git'
         sh hello.sh
       }
     }
